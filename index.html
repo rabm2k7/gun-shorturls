@@ -258,7 +258,11 @@
   <!-- <script src="webrtc.js"></script> -->
 
   <script>
-    var gun = Gun('http://localhost:8765/gun');
+
+    //SET YOUR Entry Node GUN SERVER
+    var entryNode = ["http://localhost:8765/gun"];
+
+    var gun = Gun(entryNode);
     console.log("Gun loaded");
 
     LoadURL();
